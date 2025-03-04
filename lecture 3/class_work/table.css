@@ -1,0 +1,66 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10%;
+    background-color: antiquewhite;
+}
+
+.container{
+    max-width: 800%;
+    background-color: white;
+
+}
+
+table{
+    width: 100%;
+    /* border-collapse: collapse; */
+}
+
+thead{
+    background-color: rgb(238, 238, 242);
+    color: rgb(11, 10, 10);
+}
+
+th, td{text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(9, 9, 9);
+
+}
+
+tr:hover{
+    background-color: lightblue;
+}
+
+th{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+tfoot{
+    background-color: rgb(238, 190, 15);
+    color: black;
+}
+
+.clon{
+    background-color: rgb(213, 194, 82);
+}
+
+.cloner{
+    background-color: rgb(98, 225, 98);
+}
+
+.grom{
+    background-color: rgb(107, 72, 133);
+}
+
+.clon:hover{
+    background-color: lightblue;
+}
+
+.cloner:hover{
+    background-color: lightblue;
+}
+
+.grom:hover{
+    background-color: lightblue;
+}
+

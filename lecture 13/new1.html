@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners Fix</title>
+</head>
+<body>
+    <button id="myButton">My Button</button>
+    <div id="mouseArea">Mouse Over and Out</div>
+    <div id="output"></div>
+    <div id="keyOutput">Press a key...</div>
+
+    <script>
+        const output = document.getElementById('output');
+        const keyOutput = document.getElementById('keyOutput');
+        const button = document.getElementById('myButton');
+        const mouseArea = document.getElementById('mouseArea');
+
+        // Mouse events
+        button.addEventListener('click', () => {
+            output.textContent = 'Button Clicked';
+        });
+
+        button.addEventListener('dblclick', () => {
+            output.textContent = 'Button is Double Clicked';
+        });
+
+        mouseArea.addEventListener('mouseover', () => {
+            output.textContent = 'Mouse Over the Area';
+        });
+
+        mouseArea.addEventListener('mouseout', () => {
+            output.textContent = 'Mouse Out';
+        });
+
+        // Keyboard events
+        document.addEventListener('keydown', (event) => {
+            keyOutput.textContent = `Key Down: ${event.key}`;
+        });
+
+        document.addEventListener('keyup', (event) => {
+            keyOutput.textContent = `Key Up: ${event.key}`;
+        });
+
+        document.addEventListener('keypress', (event) => {
+            keyOutput.textContent = `Key Pressed: ${event.key}`;
+        });
+
+
+    </script>
+</body>
+</html>

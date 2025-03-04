@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pop up boxes</h1>
+    <button onclick="show()">Your Details is </button>
+        <script>
+        alert("Welcome to resistration form")
+        let name = prompt("Enter tou name")
+        let age = prompt("Ente your age")
+        let email = prompt("Enter your Email")
+
+        let user  = {
+            name:name, 
+            age:parseInt(age), 
+            email:email,
+            displayinfo:function(){
+                return`user info: ${this.name} Age: ${this.age} Email: ${this.email}`
+            }
+        }
+
+        function isAdult(user){
+            return user.age >= 18;
+        }
+        // isAdult()
+
+        // Show details 
+        function show(){
+            alert(user.displayinfo())
+        }
+        </script>
+    
+</body>
+</html>

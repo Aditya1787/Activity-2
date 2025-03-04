@@ -1,0 +1,45 @@
+/* type fo selectors */
+/* 1. Universal selector */
+
+*{
+    background-color: rgb(206, 199, 60);
+}
+
+/* Element selector */
+
+h3{
+    color: rgb(195, 33, 33);
+}
+
+/* class selector */
+.navigation{
+    background-color: rgb(76, 180, 28); 
+    height: 50px;
+    color: white;
+}
+
+/* id selector */
+
+#demo{
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Group selector */
+
+p, a{
+    font-size: larger;
+    color: rgb(0, 0, 255);
+}
+
+/* attribute selector */
+
+input[type = "text"]{
+    border: 1px solid red;
+}
+
+/* pseudo selector */
+a:hover{
+    color: orange;
+}

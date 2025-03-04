@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f2ef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .left-section {
+            flex: 1;
+            padding: 50px;
+        }
+
+        .left-section h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .left-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .left-section button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .google-button {
+            background-color: #4285F4;
+            color: #fff;
+        }
+
+        .email-button {
+            background-color: #fff;
+            color: #555;
+            border: 1px solid #ddd;
+        }
+
+        .left-section .terms {
+            font-size: 14px;
+            color: #888;
+            margin-top: 20px;
+        }
+
+        .left-section .terms a {
+            color: #0073b1;
+            text-decoration: none;
+        }
+
+        .right-section {
+            flex: 1;
+            background-color: #f3f2ef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .right-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .signup {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .signup a {
+            color: #0073b1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signup a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left-section">
+        <h1>Welcome to your professional community</h1>
+        <button class="google-button">Continue with Google</button>
+        <button class="email-button">Sign in with email</button>
+        <p class="terms">
+            By clicking Continue to join or sign in, you agree to LinkedIn's
+            <a href="#">User Agreement</a>, <a href="#">Privacy Policy</a>, and <a href="#">Cookie Policy</a>.
+        </p>
+        <div class="signup">
+            <p>New to LinkedIn? <a href="#">Join now</a></p>
+        </div>
+    </div>
+    <div class="right-section">
+        <img src="https://via.placeholder.com/400" alt="Illustration of a person working on a laptop">
+    </div>
+</div>
+
+</body>
+</html>

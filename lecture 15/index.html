@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            background-color: green;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .nav {
+            padding: 10px;
+        }
+        .nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .left-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 50%;
+        }
+        .right-container {
+            width: 40%;
+        }
+        .box {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            width: 80%;
+            text-align: left;
+            margin: 10px;
+        }
+        .box h3 {
+            color: green;
+        }
+        .footer {
+            background-color: #0f0f0f;
+            color: white;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: rgb(31, 190, 10);
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p>Welcome to your Website Task</p>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-container">
+            <div class="box">
+                <h3>About CSS</h3>
+                <p>Cascading Style Sheets (CSS) allow you to style and layout your web pages, adding colors, spacing, and more.</p>
+            </div>
+            <div class="box">
+                <h3>Responsive Design</h3>
+                <p>Responsive design ensures your webpage looks great on all devices from desktop to mobile phones.</p>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="box">
+                <h3>Box Model</h3>
+                <p>The CSS box model describes the rectangular boxes generated to elements. It includes margin, border, padding, and the actual content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Created by Ravi Raj Follow us on 
+        <a href="#">Instagram</a> <a href="#">Twitter</a> <a href="#">Linkedin</a>
+    </div>
+</body>
+</html>
